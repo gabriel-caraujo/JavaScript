@@ -1,0 +1,28 @@
+body{
+    
+    margin: auto;
+    
+}
+#veiculos{
+    display: flex;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    /*align-content: center;*/
+    padding: 15px;
+    margin-left: 15px;
+    justify-content: space-around;
+}
+
+#andar{
+    height: 5rem;
+    width: 20rem;
+    border-radius: 30px;
+}
+
+#pedestre{
+    height: 150px;
+    color:#fff;
+}

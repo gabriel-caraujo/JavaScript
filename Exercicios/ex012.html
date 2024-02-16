@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio</title>
+    <style>
+        body{
+            background-color: lightblue;
+            text-align: center; 
+            border-radius: 80px 80px 80px 80px;
+        }
+        h1{
+            font-size: 80px;
+            color: white;
+            border-radius: 80px 80px 80px 80px;
+            background-color: navy;
+            height:90px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Relógio</h1>
+
+    <script class>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var minutos = agora.getMinutes()
+        var segundos = agora.getSeconds()
+        document.write('Agora são exatamente ' + hora +(':') + minutos +(':') + segundos)
+        if (hora < 12) {
+            document.write(' ,Bom dia')
+        }else if (hora <= 18){
+            document.write(' ,Boa tarde')
+        }else{
+            document.write(' ,Boa noite')
+        }
+        
+    </script>
+    
+</body>
+</html>

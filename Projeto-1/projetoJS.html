@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Js</title>
+    <link rel="stylesheet" href="projetoJS.css">
+    
+
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="msg">
+        </div>
+        <div id="imagem" class="foto">
+            <img src="imgmanhas.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;GabrielCaetano</p>
+    </footer>
+<script>
+    function carregar() {
+    var msg = document.getElementById("msg")
+    var img = document.getElementById("imagem")
+    var data = new Date
+    var horas = data.getHours()
+    var minutos = data.getUTCMinutes()
+    msg.innerHTML = 'Agora são ' + horas + ':' + minutos
+    if (horas >= 0 && horas < 12) {
+        //bom dia
+        img.src = "imgmanhas.png"
+        document.body.style.background='#556380'
+    } else if (horas >= 12 && horas < 18) {
+        //boa tarde
+        img.src = "imgtarde.png"
+        document.body.style.background='#c09376'
+    } else {
+        //boa noite
+        img.scr = "imgnoite.png"
+        document.body.style.background='#111a39'
+    }
+}
+</script>
+
+</body>
+
+</html>

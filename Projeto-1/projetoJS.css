@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(166, 241, 95);
+    font: normal 10pt Colimbra;
+}
+
+header{
+   text-align: center;
+   color: white; 
+}
+
+section{
+    background-color: white;
+    width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.664);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+#msg{
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px black;
+    width: 200px;
+    margin: auto;
+    font: normal 14pt Colimbra;
+}
+
+#imagem{
+    margin-top: 20px;
+}
+
+footer{
+    color: white;
+    text-align:  center;
+    font-style: italic;
+}
